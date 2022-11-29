@@ -89,6 +89,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
+                <configuration/>
             </plugin>
         </plugins>
     </build>
@@ -125,10 +126,6 @@
         </pluginRepository>
     </pluginRepositories>
     <dependencies>
-        <dependency>
-            <groupId>com.h2database</groupId>
-            <artifactId>h2</artifactId>
-        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
@@ -203,6 +200,10 @@
         <dependency>
             <groupId>io.cronapp</groupId>
             <artifactId>cronapp-framework-auditlog</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>sql-server</groupId>
+            <artifactId>sql-server-jdbc</artifactId>
         </dependency>
     </dependencies>
     <properties>
